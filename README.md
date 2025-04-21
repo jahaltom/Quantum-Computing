@@ -27,17 +27,13 @@ Each qubit starts in the classical state `|0⟩`. Applying a **Hadamard gate (H)
 
 H|0⟩ = (1/√2)(|0⟩ + |1⟩)
 
-pgsql
-Copy
-Edit
 
+```
 After applying H to **16 qubits**, the entire system is in a superposition of **all possible 16-bit strings**:
-
+```
 |ψ⟩ = (1/√65536) × (|0000000000000000⟩ + ... + |1111111111111111⟩)
 
-yaml
-Copy
-Edit
+
 
 This is a uniform superposition over `2^16 = 65,536` basis states.
 
