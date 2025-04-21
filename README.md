@@ -25,9 +25,9 @@ At the core of this script is a simple but powerful quantum phenomenon:
 
 Each qubit starts in the ground state \(|0\rangle\). A **Hadamard gate** is applied:
 
-```
+<pre> ```
 H|0\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)
-```
+``` </pre>
 
 This places the qubit into an **equal superposition** of 0 and 1. For 16 qubits, the full system state becomes:
 
