@@ -71,7 +71,7 @@ Install dependencies:
 ```
 pip install qiskit qiskit-ibm-runtime
 ```
-🔐 Setup
+## 🔐 Setup
 Log in to quantum.ibm.com and copy your API token.
 
 Save it using:
@@ -80,7 +80,7 @@ Save it using:
 from qiskit_ibm_runtime import QiskitRuntimeService
 QiskitRuntimeService.save_account(token="YOUR_TOKEN", overwrite=True)
 ```
-🧬 Usage
+## 🧬 Usage
 Run the script:
 
 ```
@@ -98,7 +98,7 @@ This seed is now available for all NumPy random operations:
 ```
 np.random.seed(quantum_seed)
 ```
-💡 Why Use Quantum Seeds?
+## 💡 Why Use Quantum Seeds?
 🎲 Randomized model initializations
 
 🧬 Monte Carlo simulations
@@ -109,7 +109,7 @@ np.random.seed(quantum_seed)
 
 🧪 Experimental protocols in computational science
 
-📚 References
+## 📚 References
 Qiskit Runtime Migration Guide
 
 Qiskit Sampler API
@@ -118,7 +118,7 @@ Born Rule – Wikipedia
 
 IBM Quantum Hardware
 
-✨ Credits
+## ✨ Credits
 Built with ❤️ and quantum science using:
 
 IBM Qiskit Runtime
