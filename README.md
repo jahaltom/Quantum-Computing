@@ -28,9 +28,9 @@ Each qubit starts in the classical state `|0⟩`. Applying a **Hadamard gate (H)
 H|0⟩ = (1/√2)(|0⟩ + |1⟩)
 
 
-```
+
 After applying H to **16 qubits**, the entire system is in a superposition of **all possible 16-bit strings**:
-```
+
 |ψ⟩ = (1/√65536) × (|0000000000000000⟩ + ... + |1111111111111111⟩)
 
 
@@ -45,9 +45,7 @@ When you measure a quantum state, it **collapses** to a single classical result.
 
 P(result) = |⟨result|ψ⟩|²
 
-yaml
-Copy
-Edit
+
 
 This is **true randomness** — not pseudorandomness, not chaos, not thermal noise — but a **fundamental feature of quantum mechanics**.
 
@@ -72,16 +70,16 @@ Install dependencies:
 
 ```bash
 pip install qiskit qiskit-ibm-runtime
+
 🔐 Setup
 Log in to quantum.ibm.com and copy your API token.
 
 Save it using:
 
-python
-Copy
-Edit
+```
 from qiskit_ibm_runtime import QiskitRuntimeService
 QiskitRuntimeService.save_account(token="YOUR_TOKEN", overwrite=True)
+```
 🧬 Usage
 Run the script:
 
