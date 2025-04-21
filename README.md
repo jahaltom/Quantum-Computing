@@ -58,6 +58,7 @@ This randomness comes from a real quantum processor, like IBM’s `ibm_sherbrook
 You are literally pulling entropy from the quantum vacuum — the truest source of randomness we know.
 
 ---
+```
          ┌───┐ ░ ┌─┐                                             
     q_0: ┤ H ├─░─┤M├─────────────────────────────────────────────
          ├───┤ ░ └╥┘┌─┐                                          
@@ -94,6 +95,7 @@ You are literally pulling entropy from the quantum vacuum — the truest source 
 meas: 16/═════════╩══╩══╩══╩══╩══╩══╩══╩══╩══╩══╩══╩══╩══╩══╩══╩═
                   0  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15
 
+```
 ## 📦 Requirements
 
 - Python 3.8+
