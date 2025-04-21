@@ -113,7 +113,7 @@ Install dependencies:
 pip install qiskit qiskit-ibm-runtime qiskit-aer
 ```
 ## 🔐 Setup
-Log in to quantum.ibm.com and copy your API token.
+Log in to (https://quantum.ibm.com) and copy your API token.
 
 Save it using:
 
