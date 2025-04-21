@@ -6,6 +6,9 @@ Unlike classical pseudo-random seeds, this method harnesses **true entropy** dir
 
 ---
 
+## Open in Google Colab
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jahaltom/Quantum-Computing/blob/main/quantum_seed.ipynb)
+
 ## 🚀 What the Script Does
 
 - Connects to IBM’s real quantum devices via `QiskitRuntimeService`
