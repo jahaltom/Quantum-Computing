@@ -153,13 +153,11 @@ np.random.seed(quantum_seed)
 🧪 Experimental protocols in computational science
 
 ## 📚 References
-Qiskit Runtime Migration Guide
 
-Qiskit Sampler API
-
-Born Rule – Wikipedia
-
-IBM Quantum Hardware
+- [Qiskit Runtime Migration Guide](https://docs.quantum.ibm.com/migration-guides/qiskit-runtime)
+- [Qiskit Sampler API Documentation](https://docs.quantum.ibm.com/api/qiskit-ibm-runtime/sampler)
+- [Born Rule – Wikipedia](https://en.wikipedia.org/wiki/Born_rule)
+- [IBM Quantum Hardware Overview](https://quantum-computing.ibm.com/)
 
 
 
