@@ -68,9 +68,9 @@ You are literally pulling entropy from the quantum vacuum — the truest source 
 
 Install dependencies:
 
-```bash
+```
 pip install qiskit qiskit-ibm-runtime
-
+```
 🔐 Setup
 Log in to quantum.ibm.com and copy your API token.
 
@@ -83,24 +83,21 @@ QiskitRuntimeService.save_account(token="YOUR_TOKEN", overwrite=True)
 🧬 Usage
 Run the script:
 
-bash
-Copy
-Edit
+```
 python quantum_seed.py
+```
 Example output:
 
-yaml
-Copy
-Edit
+```
 Using backend: ibm_sherbrooke
 Quantum bits: [1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0]
 Quantum seed: 39620
+```
 This seed is now available for all NumPy random operations:
 
-python
-Copy
-Edit
+```
 np.random.seed(quantum_seed)
+```
 💡 Why Use Quantum Seeds?
 🎲 Randomized model initializations
 
@@ -133,9 +130,7 @@ Guidance by ChatGPT (April 2025) with quantum mechanics breakdowns
 ⚠️ Disclaimer
 This script depends on IBM Quantum device availability and internet/cloud access. Ensure your account is properly configured before use.
 
-yaml
-Copy
-Edit
+
 
 
 ---
