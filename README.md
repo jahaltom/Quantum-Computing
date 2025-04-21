@@ -162,6 +162,3 @@ IBM Quantum Hardware
 
 ⚠️ Disclaimer
 This script depends on IBM Quantum device availability and internet/cloud access. Ensure your account is properly configured before use.
-
-
-` diagram of the quantum circuit!
