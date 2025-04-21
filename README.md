@@ -69,7 +69,7 @@ You are literally pulling entropy from the quantum vacuum — the truest source 
 Install dependencies:
 
 ```
-pip install qiskit qiskit-ibm-runtime
+pip install qiskit qiskit-ibm-runtime qiskit-aer
 ```
 ## 🔐 Setup
 Log in to quantum.ibm.com and copy your API token.
@@ -78,7 +78,9 @@ Save it using:
 
 ```
 from qiskit_ibm_runtime import QiskitRuntimeService
-QiskitRuntimeService.save_account(token="YOUR_TOKEN", overwrite=True)
+
+# Replace 'MY_TOKEN' with your actual token from the IBM Quantum dashboard
+QiskitRuntimeService.save_account(channel="ibm_quantum", token="MY_TOKEN", overwrite=True)
 ```
 ## 🧬 Usage
 Run the script:
