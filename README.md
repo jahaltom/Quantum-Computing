@@ -58,6 +58,7 @@ This randomness comes from a real quantum processor, like IBM’s `ibm_sherbrook
 You are literally pulling entropy from the quantum vacuum — the truest source of randomness we know.
 
 ---
+## Quantum circuit for generating a 16-bit quantum random number seed
 ```
          ┌───┐ ░ ┌─┐                                             
     q_0: ┤ H ├─░─┤M├─────────────────────────────────────────────
