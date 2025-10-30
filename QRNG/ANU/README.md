@@ -1,42 +1,25 @@
-## 🔒 ANU Quantum Random Number Generator (QRNG)
+## 🔒 What is the ANU Quantum Random Number Generator (QRNG)?
 
-This project fetches **true quantum-generated randomness** from the Australian National University’s public QRNG API.
+The **Australian National University (ANU) QRNG** produces true randomness using the fundamental laws of quantum physics — not algorithms, seeds, or pseudo-random functions.
 
-Unlike pseudorandom algorithms, this entropy comes from **quantum vacuum fluctuations** — an inherently unpredictable physical process guaranteed by quantum mechanics.
+### 🧠 How it Works (Simple Overview)
 
-### 🧠 How It Works
+At the quantum scale, empty space is not truly empty — it constantly fluctuates due to the **quantum vacuum**, causing unpredictable light intensity changes. ANU's QRNG:
 
-At the quantum level, empty space is not “empty” — it constantly fluctuates. ANU:
+1. **Shines a laser into a vacuum chamber**
+2. **Measures quantum fluctuations (vacuum noise)**
+3. **Converts these unpredictable photon variations into random bits**
+4. **Applies randomness extraction + statistical validation**
+5. **Streams the results as true quantum random numbers**
 
-1. Shines a laser into a vacuum chamber  
-2. Measures unpredictable vacuum photon fluctuations  
-3. Converts that noise directly into **random bytes**  
-4. Publishes them via a public API
+These fluctuations are **inherently unpredictable**, guaranteed by quantum mechanics — meaning **no classical process or attacker can predict the output**.
 
-This randomness is **non-deterministic, non-repeatable, and cannot be predicted or reproduced**.
+### ✅ Why It Matters
 
-### ✅ Why Use True Quantum Randomness?
+- Provides **physical entropy**, not mathematical simulation  
+- Suitable for **cryptography, simulations, key generation, security research, and AI randomness experiments**
+- Public API to stream true quantum randomness in real time
 
-| Feature | ANU QRNG | Software PRNG |
-|--------|---------|---------------|
-Source | Quantum vacuum noise | Mathematical algorithm |
-Predictable | ❌ Impossible | ✅ Possible in principle |
-Entropy | Physical entropy | Computed entropy |
-Best Use | Cryptography, security research, randomness studies, simulation | Games, general apps, non-security RNG |
-
-### 🚀 Minimal Python Example
-
-```python
-import requests
-
-def get_qrng_bytes(length=32):
-    url = f"https://qrng.anu.edu.au/API/jsonI.php?length={length}&type=uint8"
-    response = requests.get(url, timeout=5)
-    response.raise_for_status()
-    data = response.json()
-    qrng_raw = data["data"]
-    qrng_bytes = bytes(qrng_raw)
-    print("Quantum bytes:", qrng_bytes.hex())
-    return qrng_bytes
-
-get_qrng_bytes(32)
+### 📎 Source  
+ANU Quantum Random Numbers Lab  
+https://qrng.anu.edu.au/
