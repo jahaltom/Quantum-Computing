@@ -90,26 +90,46 @@ Quantum randomness | Fundamentally unpredictable
 ---
 
 
+# Quantum Coin Flip — Understanding the Equation & Circuit
 
-## 🔬 Core Quantum Equation & Circuit Physics
+This project demonstrates the simplest real quantum algorithm:  
+a **quantum coin flip** run on IBM Quantum hardware.
 
-The circuit performs the transformation:
+A qubit is:
+
+1. Prepared in state `|0⟩`
+2. Put into **superposition** with a Hadamard gate `H`
+3. Measured — forcing nature to choose `0` or `1`
+
+This produces **true quantum randomness**, not pseudo‑random numbers.
+
+---
+
+## 🔬 Core Quantum Equation
+
+The circuit performs the following transformation:
 
 ```text
 |0> --H--> (|0> + |1>) / √2 --measure--> {0,1}
 ```
 
-or in math:
+Mathematically:
 
 $$
 |0\rangle \xrightarrow{H} \frac{|0\rangle + |1\rangle}{\sqrt{2}}
 $$
 
+This means:
+
+- The qubit **starts definitely** as `|0⟩`
+- After `H`, it becomes a **superposition**  
+- Measurement collapses it into `0` or `1` with equal probability
+
 ---
 
-### 1️⃣ Initial State
+## 1️⃣ Initial State
 
-The qubit begins in the computational basis state:
+A qubit initialized in `|0⟩` is:
 
 $$
 |0\rangle =
@@ -119,13 +139,13 @@ $$
 \end{bmatrix}
 $$
 
-A pure, definite state — the qubit is fully aligned with the Z‑axis (north pole of Bloch sphere).
+A pure basis state — fully “up” on the Bloch sphere.
 
 ---
 
-### 2️⃣ Apply the Hadamard Gate \(H\)
+## 2️⃣ Apply the Hadamard Gate \(H\)
 
-The Hadamard creates an **equal superposition**:
+The Hadamard gate creates equal superposition:
 
 $$
 H =
@@ -136,7 +156,7 @@ H =
 \end{bmatrix}
 $$
 
-Applying \(H\) to \(|0\rangle\):
+Apply it to the starting state:
 
 $$
 H|0\rangle
@@ -150,60 +170,56 @@ H|0\rangle
 \frac{|0\rangle + |1\rangle}{\sqrt{2}}
 $$
 
-After this, the qubit is **not “0 or 1”** — it is in a **coherent superposition of both**.
+At this point the qubit is **in both states at once**.
 
 ---
 
-### 3️⃣ Measurement & Born Rule
+## 3️⃣ Measurement & Born Rule
 
-Upon measurement, the quantum state collapses:
+Upon measurement:
 
 $$
 \frac{|0\rangle + |1\rangle}{\sqrt{2}}
 \quad\longrightarrow\quad
 \begin{cases}
-|0\rangle & \text{with probability } \frac{1}{2} \\
-|1\rangle & \text{with probability } \frac{1}{2}
+|0\rangle & \text{with probability } \tfrac{1}{2} \\
+|1\rangle & \text{with probability } \tfrac{1}{2}
 \end{cases}
 $$
 
-Born rule:
+Born rule calculation:
 
 $$
 \left|\frac{1}{\sqrt{2}}\right|^2 = \frac{1}{2}
 $$
 
-> This randomness is **fundamental** — not classical chaos or noise.  
-> When measured, the qubit must “choose” a single outcome.
+> The randomness is **fundamental**, not due to noise or lack of information.
 
 ---
 
-### 🌐 Bloch Sphere View
+## 🌐 Bloch Sphere Interpretation
 
-| Stage | Bloch Sphere Interpretation |
+| Stage | Bloch Sphere Meaning |
 |---|---|
-Before Hadamard | Qubit at **north pole** (\(|0⟩\)) |
-After Hadamard | Qubit on **equator**, pointing +X (equal 0/1 probability) |
-Measurement | Projection to poles → **collapse to \(|0⟩\) or \(|1⟩\)** |
-
-Superposition = qubit on equator  
-Measurement = projection to poles
+Before `H` | State at **north pole** (`|0⟩`) |
+After `H` | Point on **equator** — equal probability |
+Measurement | Projection to poles = collapse to `0` or `1` |
 
 ---
 
-### ✅ Summary
+## ✅ Summary
 
-- Prepare qubit in \(|0⟩\)
-- Apply Hadamard → **superposition**
-- Measure → **true quantum randomness**
+- Start at `|0⟩`
+- Apply `H` → superposition
+- Measure → `0` or `1` with 50% probability each
 
-This experiment showcases:
-- Superposition  
-- Born rule  
-- Wavefunction collapse  
-- Quantum randomness (not simulatable classically)
+This simple circuit reveals the core of quantum mechanics:
 
-This is the **quantum coin flip** — the simplest real demonstration of quantum mechanics in action.
+> **Quantum states exist in multiple possibilities until you observe them.**
 
+✅ Clean LaTeX  
+✅ GitHub‑compatible  
+✅ Clear physics explanation  
 
+Paste this file as your `README.md` in GitHub.
 
