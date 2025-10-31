@@ -90,3 +90,120 @@ Quantum randomness | Fundamentally unpredictable
 ---
 
 
+
+## 🔬 Core Quantum Equation & Circuit Physics
+
+The circuit performs the transformation:
+
+```text
+|0> --H--> (|0> + |1>) / √2 --measure--> {0,1}
+```
+
+or in math:
+
+$$
+|0\rangle \xrightarrow{H} \frac{|0\rangle + |1\rangle}{\sqrt{2}}
+$$
+
+---
+
+### 1️⃣ Initial State
+
+The qubit begins in the computational basis state:
+
+$$
+|0\rangle =
+\begin{bmatrix}
+1 \\
+0
+\end{bmatrix}
+$$
+
+A pure, definite state — the qubit is fully aligned with the Z‑axis (north pole of Bloch sphere).
+
+---
+
+### 2️⃣ Apply the Hadamard Gate \(H\)
+
+The Hadamard creates an **equal superposition**:
+
+$$
+H =
+\frac{1}{\sqrt{2}}
+\begin{bmatrix}
+1 & 1 \\
+1 & -1
+\end{bmatrix}
+$$
+
+Applying \(H\) to \(|0\rangle\):
+
+$$
+H|0\rangle
+=
+\frac{1}{\sqrt{2}}
+\begin{bmatrix}
+1 \\
+1
+\end{bmatrix}
+=
+\frac{|0\rangle + |1\rangle}{\sqrt{2}}
+$$
+
+After this, the qubit is **not “0 or 1”** — it is in a **coherent superposition of both**.
+
+---
+
+### 3️⃣ Measurement & Born Rule
+
+Upon measurement, the quantum state collapses:
+
+$$
+\frac{|0\rangle + |1\rangle}{\sqrt{2}}
+\quad\longrightarrow\quad
+\begin{cases}
+|0\rangle & \text{with probability } \frac{1}{2} \\
+|1\rangle & \text{with probability } \frac{1}{2}
+\end{cases}
+$$
+
+Born rule:
+
+$$
+\left|\frac{1}{\sqrt{2}}\right|^2 = \frac{1}{2}
+$$
+
+> This randomness is **fundamental** — not classical chaos or noise.  
+> When measured, the qubit must “choose” a single outcome.
+
+---
+
+### 🌐 Bloch Sphere View
+
+| Stage | Bloch Sphere Interpretation |
+|---|---|
+Before Hadamard | Qubit at **north pole** (\(|0⟩\)) |
+After Hadamard | Qubit on **equator**, pointing +X (equal 0/1 probability) |
+Measurement | Projection to poles → **collapse to \(|0⟩\) or \(|1⟩\)** |
+
+Superposition = qubit on equator  
+Measurement = projection to poles
+
+---
+
+### ✅ Summary
+
+- Prepare qubit in \(|0⟩\)
+- Apply Hadamard → **superposition**
+- Measure → **true quantum randomness**
+
+This experiment showcases:
+- Superposition  
+- Born rule  
+- Wavefunction collapse  
+- Quantum randomness (not simulatable classically)
+
+This is the **quantum coin flip** — the simplest real demonstration of quantum mechanics in action.
+
+
+
