@@ -7,7 +7,7 @@ This project demonstrates a **true quantum coin flip** using IBM Quantum's real 
 A classical coin flip is based on chaotic physics but is ultimately deterministic if fully known.  
 A **quantum coin flip** uses **qubit superposition**:
 
-|0⟩ --H--> (|0⟩ + |1⟩) / √2
+
 
 $|0\rangle \xrightarrow{H} \frac{|0\rangle + |1\rangle}{\sqrt{2}}$
 
