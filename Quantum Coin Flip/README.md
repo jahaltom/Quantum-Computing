@@ -11,6 +11,18 @@ A **quantum coin flip** uses **qubit superposition**:
 
 $|0\rangle \xrightarrow{H} \frac{|0\rangle + |1\rangle}{\sqrt{2}}$
 
+
+|0⟩
+
+- A qubit in state zero — the quantum version of a classical bit 0.
+
+  - Not random yet
+
+  - Fully known, fully classical-looking state
+
+  - Think: a coin resting on tails before flipping.
+
+
 Then we **measure**, collapsing the qubit to either `0` or `1` with ~50/50 probability.
 
 This randomness is **fundamental**, not classical noise.
@@ -77,4 +89,4 @@ Quantum randomness | Fundamentally unpredictable
 
 ---
 
-If this showed `50/50`, congrats — you generated **real quantum entropy** ⚡🧠
+
