@@ -1,5 +1,5 @@
 ## Open in Google Colab
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jahaltom/Quantum-Computing/QRNG/ANU/blob/main/ANU_QRNG.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jahaltom/Quantum-Computing/QRNG/ANU/ANU_QRNG.ipynb)
 
 ## 🔒 What is the ANU Quantum Random Number Generator (QRNG)?
 
